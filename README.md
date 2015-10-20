@@ -43,6 +43,6 @@ _by: Stella R. LaPorta_
 * Once you have created the repository on github and added it to your local machine (c9 or Nitrous) you can do:
     ```git push origin master``` or even ```git push```  
 
-###**This will then cause the file that has been saved, added and commited to be pushed up to the cloud (local machine)**
+####**This will then cause the file that has been saved, added and commited to be pushed up to the cloud (local machine)**
 ---
 ## Workflow & Commands
