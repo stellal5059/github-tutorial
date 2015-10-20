@@ -22,6 +22,7 @@ _by: Stella R. LaPorta_
     
     * When you do git status you should get a message that says:
     
+    
     * Once you see the green you can now commit it and to commit it you would use:
     The message that should go between the quotes should be short and sweet, to show what you have done and what that command did 
     `git commit -m " "`
@@ -35,8 +36,13 @@ _by: Stella R. LaPorta_
 
 ---
 ## Repository Setup
+* To set up a repository you can do one of two things:
+    * If using Github with either cloud9 you would have to go to github and go to the + next to your icon then it will say Create New if hovered over it but when you click it you will see the words "New repository" and "New organization"
+    * Click New repository and it will give you the options:
+    
+* Once you have created the repository on github and added it to your local machine (c9 or Nitrous) you can do:
+    ```git push origin master``` or even ```git push```  
 
-
-
+**This will then cause the file that has been saved, added and commited to be pushed up to the cloud (local machine)**
 ---
 ## Workflow & Commands
