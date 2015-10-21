@@ -67,7 +67,7 @@ _by: Stella R. LaPorta_
     * -m :allows you to attach a message to the snapshot  
     * Allows you to take snapshot of your code to get ready to be pushed up to the cloud  
 **`git push`**  
-    * pushes all changes that have been added and commmitted up to the cloud to be publicly desplayed  
+    * pushes all changes that have been added and committed up to the cloud to be publicly display
 **`git pull`**  
     *Used during collaboration to pull down other changes that have been pushed up to the cloud to see what they have added or edited  
 **`git log`**  
