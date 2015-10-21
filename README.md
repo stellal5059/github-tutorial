@@ -36,13 +36,26 @@ _by: Stella R. LaPorta_
 
 ---
 ## Repository Setup
-* To set up a repository you can do one of two things:
+* In order to make a repository through the command line:
+    * create folder using `mkdir name-of-repo.md`
+    * use `cd folder-name.md` to go into that directory or folder
+    * Create file but doing `touch ReadMe.md`
+    * Type `git init` to begin tracking your progress by turning it into a repository
+* Once made repository through the command line:
     * If using Github with either cloud9 you would have to go to github and go to the + next to your icon then it will say Create New if hovered over it but when you click it you will see the words "New repository" and "New organization"
     * Click New repository and it will give you the options:
     
 * Once you have created the repository on github and added it to your local machine (c9 or Nitrous) you can do:
-    ```git push origin master``` or even ```git push```  
+            `git push origin master` or even `git push`  
 
 ####**This will then cause the file that has been saved, added and commited to be pushed up to the cloud (local machine)**
+
 ---
 ## Workflow & Commands
+
+**`git init`**  
+    * Opens repository within your current folder, WARNIN: always cd into the folder you want to initilatize before typing in `git init`
+**`git status`**(optional)  
+    * Helps to see the last file that was committed  
+        * Red =last commit was edited  
+        * Green =Staged and ready to commit  
