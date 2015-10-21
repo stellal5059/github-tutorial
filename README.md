@@ -11,26 +11,28 @@ _by: Stella R. LaPorta_
 
 ---
 ## Initial Setup
-* Once you have created a Github account you can connect it with either Cloud9(c9) or Nitrous
-    * To connect websites take the SSH Key from the website (local machine) and connect it to your account.
-    * Every time you Save, Add, Commit and Push it will go to the cloud (Github) 
+* If you don't have a Github account or not using anything cloud-like you can use a one time setup command of `git config`, this is allow you to title your work and commits   
+        * `git config --global user.name Your Name`: Sets a 1 time only global username to title your work  
+        * `git config --global user.email YourName@email.com`: Sets a 1 time only global username to attach to your work  
+* Once you have created a Github account you can connect it with either Cloud9(c9) or Nitrous  
+    * To connect websites take the SSH Key from the website (local machine) and connect it to your account.  
+    * Every time you Save, Add, Commit and Push it will go to the cloud (Github)  
 
 * To Save on Cloud9 you can set it to automatic save 
-        * If you want to manually save go to File then click Save and make sure the circle turns into an x
-* Next you would Add your code to the Stage by doing `git add .` or `git add --all` to get ready to commit 
-* After Adding you then would have to use `git status` to see if it committed properly.
+        * If you want to manually save go to File then click Save and make sure the circle turns into an x  
+* Next you would Add your code to the Stage by doing `git add .` or `git add --all` to get ready to commit  
+* After Adding you then would have to use `git status` to see if it committed properly.  
     
     * When you do git status you should get a message that says:
     
     
-    * Once you see the green you can now commit it and to commit it you would use:
-    The message that should go between the quotes should be short and sweet, to show what you have done and what that command did 
-    `git commit -m " "`
-    * Once it has been committed you will see:
+    * Once you see the green you can now commit it and to commit it you would use:  
+    The message that should go between the quotes should be short and sweet, to show what you have done and what that command did `git commit -m "Your message"`  
+    * Once it has been committed you will see:  
     
-        * Type in git log to see if it was committed, at that time you will see your message to yourself and the time you committed it.
+        * Type in git log to see if it was committed, at that time you will see your message to yourself and the time you committed it.  
         
-        *you will have to type in the command `git log` in order to see 
+        *you will have to type in the command `git log` in order to see  
       
     * Finally when it is committed you can do `git push` or `git push origin master` in order to push your committed work up to the cloud (or what system your using)
 
