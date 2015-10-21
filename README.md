@@ -6,7 +6,7 @@ _by: Stella R. LaPorta_
 ## Git vs. GitHub
 * Git: version control = "snapshots" of code; helps track progress
     * Git does not require Github
-*Github: a cloud on the internet that stores your code
+*Github: a cloud/program on the internet that stores your code - [github.com](https://github.com/)
     * Github requires Git
 
 ---
@@ -59,3 +59,8 @@ _by: Stella R. LaPorta_
     * Helps to see the last file that was committed  
         * Red =last commit was edited  
         * Green =Staged and ready to commit  
+**`git add --all`**
+    * Puts everything in current repository onto the stage to be ready to committed
+**`git commit -m`**
+    * -m :allows you to attach a message to the snapshot
+    * Allows you to take snapshot of your code to get ready to be pushed up to the cloud 
