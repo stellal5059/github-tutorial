@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Github Tutorial by stellal5059</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-dark.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/stellal5059/github-tutorial">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/stellal5059/github-tutorial/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/stellal5059/github-tutorial/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+
+      <section>
+        <div id="title">
+          <h1>Github Tutorial</h1>
+          <p>Learning how to use Git &amp; Github</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/stellal5059">stellal5059</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
+        <h1>
+<a id="github-tutorial" class="anchor" href="#github-tutorial" aria-hidden="true"><span class="octicon octicon-link"></span></a>GitHub Tutorial</h1>
+
+<p><em>by: Stella R. LaPorta</em></p>
+
+<hr>
+
+<h2>
+<a id="git-vs-github" class="anchor" href="#git-vs-github" aria-hidden="true"><span class="octicon octicon-link"></span></a>Git vs. GitHub</h2>
+
+<ul>
+<li>Git: version control = "snapshots" of code; helps track progress
+
+<ul>
+<li>Git does not require Github
+*Github: a cloud/program on the internet that stores your code - <a href="https://github.com/">github.com</a>
+</li>
+<li>Github requires Git</li>
+</ul>
+</li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="initial-setup" class="anchor" href="#initial-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Initial Setup</h2>
+
+<ul>
+<li>If you don't have a Github account or not using anything cloud-like you can use a one time setup command of <code>git config</code>, this is allow you to title your work and commits<br>
+    * <code>git config --global user.name Your Name</code>: Sets a 1 time only global username to title your work<br>
+    * <code>git config --global user.email YourName@email.com</code>: Sets a 1 time only global username to attach to your work<br>
+</li>
+<li>
+<p>Once you have created a Github account you can connect it with either Cloud9(c9) or Nitrous  </p>
+
+<ul>
+<li>To connect websites take the SSH Key from the website (local machine) and connect it to your account.<br>
+</li>
+<li>Every time you Save, Add, Commit and Push it will go to the cloud (Github)<br>
+</li>
+</ul>
+</li>
+<li><p>To Save on Cloud9 you can set it to automatic save 
+    * If you want to manually save go to File then click Save and make sure the circle turns into an x  </p></li>
+<li>Next you would Add your code to the Stage by doing <code>git add .</code> or <code>git add --all</code> to get ready to commit<br>
+</li>
+<li>
+<p>After Adding you then would have to use <code>git status</code> to see if it committed properly.  </p>
+
+<ul>
+<li><p>When you do git status you should get a message that says:</p></li>
+<li><p>Once you see the green you can now commit it and to commit it you would use:<br>
+The message that should go between the quotes should be short and sweet, to show what you have done and what that command did <code>git commit -m "Your message"</code>  </p></li>
+<li>
+<p>Once it has been committed you will see:  </p>
+
+<ul>
+<li>Type in git log to see if it was committed, at that time you will see your message to yourself and the time you committed it.<br>
+</li>
+</ul>
+
+<p>*you will have to type in the command <code>git log</code> in order to see  </p>
+</li>
+<li><p>Finally when it is committed you can do <code>git push</code> or <code>git push origin master</code> in order to push your committed work up to the cloud (or what system your using)</p></li>
+</ul>
+</li>
+</ul>
+
+<hr>
+
+<h2>
+<a id="repository-setup" class="anchor" href="#repository-setup" aria-hidden="true"><span class="octicon octicon-link"></span></a>Repository Setup</h2>
+
+<ul>
+<li>In order to make a repository through the command line:
+
+<ul>
+<li>create folder using <code>mkdir name-of-repo.md</code>
+</li>
+<li>use <code>cd folder-name.md</code> to go into that directory or folder</li>
+<li>Create file but doing <code>touch ReadMe.md</code>
+</li>
+<li>Type <code>git init</code> to begin tracking your progress by turning it into a repository</li>
+</ul>
+</li>
+<li>
+<p>Once made repository through the command line:</p>
+
+<ul>
+<li>If using Github with either cloud9 you would have to go to github and go to the + next to your icon then it will say Create New if hovered over it but when you click it you will see the words "New repository" and "New organization"</li>
+<li>Click New repository and it will give you the options:</li>
+</ul>
+</li>
+<li><p>Once you have created the repository on github and added it to your local machine (c9 or Nitrous) you can do:
+        <code>git push origin master</code> or even <code>git push</code>  </p></li>
+</ul>
+
+<h4>
+<a id="this-will-then-cause-the-file-that-has-been-saved-added-and-commited-to-be-pushed-up-to-the-cloud-local-machine" class="anchor" href="#this-will-then-cause-the-file-that-has-been-saved-added-and-commited-to-be-pushed-up-to-the-cloud-local-machine" aria-hidden="true"><span class="octicon octicon-link"></span></a><strong>This will then cause the file that has been saved, added and commited to be pushed up to the cloud (local machine)</strong>
+</h4>
+
+<hr>
+
+<h2>
+<a id="workflow--commands" class="anchor" href="#workflow--commands" aria-hidden="true"><span class="octicon octicon-link"></span></a>Workflow &amp; Commands</h2>
+
+<p><strong><code>git init</code></strong><br>
+    * Opens repository within your current folder, WARNIN: always cd into the folder you want to initilatize before typing in <code>git init</code><br>
+<strong><code>git status</code></strong>(optional)<br>
+    * Helps to see the last file that was committed<br>
+        * Red =last commit was edited<br>
+        * Green =Staged and ready to commit<br>
+<strong><code>git add --all</code></strong><br>
+    * Puts everything in current repository onto the stage to be ready to committed<br>
+<strong><code>git commit -m</code></strong><br>
+    * -m :allows you to attach a message to the snapshot<br>
+    * Allows you to take snapshot of your code to get ready to be pushed up to the cloud<br>
+<strong><code>git push</code></strong><br>
+    * pushes all changes that have been added and committed up to the cloud to be publicly display
+<strong><code>git pull</code></strong><br>
+    <em>Used during collaboration to pull down other changes that have been pushed up to the cloud to see what they have added or edited<br>
+*</em><code>git log</code>**<br>
+    * Once you have saved added and committed you can type in git log in order to see all of your commits and the messages along with them<br>
+<strong><code>git diff</code></strong><br>
+    * Shows you the difference between the current code you have now and what was last committed<br>
+<strong><code>git remote -v</code></strong><br>
+    * Allows you to see which remote repository's are currently attached to your local machine<br>
+<strong><code>git clone</code></strong><br>
+    * Used to clone a copy of someone else's repository but not be able to push it and mix it with their code  </p>
+      </section>
+
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+    
+  </body>
+</html>
