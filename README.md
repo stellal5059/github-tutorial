@@ -63,7 +63,7 @@ _by: Stella R. LaPorta_
     * Opens repository within your current folder, WARNIN: always cd into the folder you want to initilatize before typing in `git init`  
 **`git status`**(optional)  
     * Helps to see the last file that was committed  
-        * Red =last commit was edited  
+        * Red =last commit was edited   
         * Green =Staged and ready to commit  
 **`git add --all`**  
     * Puts everything in current repository onto the stage to be ready to committed  
@@ -72,9 +72,9 @@ _by: Stella R. LaPorta_
     * Allows you to take snapshot of your code to get ready to be pushed up to the cloud  
     * Always add message to help you track your progress  
 **`git push`**  
-    * pushes all changes that have been added and committed up to the cloud to be publicly display
+    * pushes all changes that have been added and committed up to the cloud to be publicly display  
 **`git pull`**  
-    *Used during collaboration to pull down other changes that have been pushed up to the cloud to see what they have added or edited  
+    *Used during collaboration to pull down other changes that have been pushed up to the cloud to see what they have added or edited   
 **`git log`**  
     * Once you have saved added and committed you can type in git log in order to see all of your commits and the messages along with them  
 **`git diff`**  
@@ -85,4 +85,4 @@ _by: Stella R. LaPorta_
 **`git remote -v`**  
     * Allows you to see which remote repository's are currently attached to your local machine  
 **`git clone`**  
-    * Used to clone a copy of someone else's repository but not be able to push it and mix it with their code  
+    * Used to clone a copy of someone else's repository but not be able to push it and mix it with their code   
