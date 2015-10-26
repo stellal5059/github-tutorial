@@ -68,9 +68,9 @@ _by: Stella R. LaPorta_
 **`git add --all`**  
     * Puts everything in current repository onto the stage to be ready to committed  
 **`git commit -m`**  
-    * -m :allows you to attach a message to the snapshot  
-    * Allows you to take snapshot of your code to get ready to be pushed up to the cloud 
-    * Always add message to help you track your progress
+    * -m :allows you to attach a message to the snapshot   
+    * Allows you to take snapshot of your code to get ready to be pushed up to the cloud  
+    * Always add message to help you track your progress  
 **`git push`**  
     * pushes all changes that have been added and committed up to the cloud to be publicly display
 **`git pull`**  
