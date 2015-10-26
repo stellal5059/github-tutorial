@@ -24,10 +24,14 @@ _by: Stella R. LaPorta_
 * After Adding you then would have to use `git status` to see if it committed properly.  
     
     * When you do git status you should get a message that says:
-    
-    
+    ```
+    On branch master
+    Your branch is up-to-date with 'origin/master'.
+
+    nothing to commit, working directory clean
+    ```
     * Once you see the green you can now commit it and to commit it you would use:  
-    The message that should go between the quotes should be short and sweet, to show what you have done and what that command did `git commit -m "Your message"`  
+    The message that should go between the quotes should be short and sweet, to show what you have done and what that command did `git commit -m "Your message"`; you should always have a message when committing becaue it helps you track your thought and edits
     * Once it has been committed you will see:  
     
         * Type in git log to see if it was committed, at that time you will see your message to yourself and the time you committed it.  
