@@ -36,7 +36,7 @@ _by: Stella R. LaPorta_
     
         * Type in git log to see if it was committed, at that time you will see your message to yourself and the time you committed it.  
         
-        *you will have to type in the command `git log` in order to see  
+        *you will have to type in the command `git log` in order to see the message you attached to the commit and the time and date it was editied
       
     * Finally when it is committed you can do `git push` or `git push origin master` in order to push your committed work up to the cloud (or what system your using)
 
@@ -69,7 +69,8 @@ _by: Stella R. LaPorta_
     * Puts everything in current repository onto the stage to be ready to committed  
 **`git commit -m`**  
     * -m :allows you to attach a message to the snapshot  
-    * Allows you to take snapshot of your code to get ready to be pushed up to the cloud  
+    * Allows you to take snapshot of your code to get ready to be pushed up to the cloud 
+    * Always add message to help you track your progress
 **`git push`**  
     * pushes all changes that have been added and committed up to the cloud to be publicly display
 **`git pull`**  
@@ -78,8 +79,10 @@ _by: Stella R. LaPorta_
     * Once you have saved added and committed you can type in git log in order to see all of your commits and the messages along with them  
 **`git diff`**  
     * Shows you the difference between the current code you have now and what was last committed  
+**`git remote add`**  
+    * connecting your repo on your local machine directly to github  
+        * `-u origin master`: it means to push the repo up to the repository on the master branch  
 **`git remote -v`**  
     * Allows you to see which remote repository's are currently attached to your local machine  
 **`git clone`**  
     * Used to clone a copy of someone else's repository but not be able to push it and mix it with their code  
-    
