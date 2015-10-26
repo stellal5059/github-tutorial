@@ -1,43 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-dark.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
+
     <title>Github Tutorial by stellal5059</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-dark.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-
   </head>
+
   <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/stellal5059/github-tutorial">View On GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/stellal5059/github-tutorial/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/stellal5059/github-tutorial/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
-        </nav>
-      </div><!-- end header -->
 
-    <div class="wrapper">
+    <header>
+      <div class="container">
+        <h1>Github Tutorial</h1>
+        <h2>Learning how to use Git &amp; Github</h2>
 
-      <section>
-        <div id="title">
-          <h1>Github Tutorial</h1>
-          <p>Learning how to use Git &amp; Github</p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/stellal5059">stellal5059</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
-        </div>
+        <section id="downloads">
+          <a href="https://github.com/stellal5059/github-tutorial/zipball/master" class="btn">Download as .zip</a>
+          <a href="https://github.com/stellal5059/github-tutorial/tarball/master" class="btn">Download as .tar.gz</a>
+          <a href="https://github.com/stellal5059/github-tutorial" class="btn btn-github"><span class="icon"></span>View on GitHub</a>
+        </section>
+      </div>
+    </header>
 
+    <div class="container">
+      <section id="main_content">
         <h1>
 <a id="github-tutorial" class="anchor" href="#github-tutorial" aria-hidden="true"><span class="octicon octicon-link"></span></a>GitHub Tutorial</h1>
 
@@ -88,9 +78,18 @@
 <p>After Adding you then would have to use <code>git status</code> to see if it committed properly.  </p>
 
 <ul>
-<li><p>When you do git status you should get a message that says:</p></li>
-<li><p>Once you see the green you can now commit it and to commit it you would use:<br>
-The message that should go between the quotes should be short and sweet, to show what you have done and what that command did <code>git commit -m "Your message"</code>  </p></li>
+<li>When you do git status you should get a message that says:</li>
+</ul>
+
+<pre><code>On branch master
+Your branch is up-to-date with 'origin/master'.
+
+nothing to commit, working directory clean
+</code></pre>
+
+<ul>
+<li>Once you see the green you can now commit it and to commit it you would use:<br>
+The message that should go between the quotes should be short and sweet, to show what you have done and what that command did <code>git commit -m "Your message"</code>; you should always have a message when committing becaue it helps you track your thought and edits</li>
 <li>
 <p>Once it has been committed you will see:  </p>
 
@@ -99,7 +98,7 @@ The message that should go between the quotes should be short and sweet, to show
 </li>
 </ul>
 
-<p>*you will have to type in the command <code>git log</code> in order to see  </p>
+<p>*you will have to type in the command <code>git log</code> in order to see the message you attached to the commit and the time and date it was editied</p>
 </li>
 <li><p>Finally when it is committed you can do <code>git push</code> or <code>git push origin master</code> in order to push your committed work up to the cloud (or what system your using)</p></li>
 </ul>
@@ -155,22 +154,25 @@ The message that should go between the quotes should be short and sweet, to show
 <strong><code>git commit -m</code></strong><br>
     * -m :allows you to attach a message to the snapshot<br>
     * Allows you to take snapshot of your code to get ready to be pushed up to the cloud<br>
+    * Always add message to help you track your progress<br>
 <strong><code>git push</code></strong><br>
-    * pushes all changes that have been added and committed up to the cloud to be publicly display
+    * pushes all changes that have been added and committed up to the cloud to be publicly display<br>
 <strong><code>git pull</code></strong><br>
     <em>Used during collaboration to pull down other changes that have been pushed up to the cloud to see what they have added or edited<br>
 *</em><code>git log</code>**<br>
     * Once you have saved added and committed you can type in git log in order to see all of your commits and the messages along with them<br>
 <strong><code>git diff</code></strong><br>
     * Shows you the difference between the current code you have now and what was last committed<br>
+<strong><code>git remote add</code></strong><br>
+    * connecting your repo on your local machine directly to github<br>
+        * <code>-u origin master</code>: it means to push the repo up to the repository on the master branch<br>
 <strong><code>git remote -v</code></strong><br>
     * Allows you to see which remote repository's are currently attached to your local machine<br>
 <strong><code>git clone</code></strong><br>
-    * Used to clone a copy of someone else's repository but not be able to push it and mix it with their code  </p>
+    * Used to clone a copy of someone else's repository but not be able to push it and mix it with their code   </p>
       </section>
-
     </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+
     
   </body>
 </html>
